@@ -1,0 +1,5 @@
+salario_mensal= input("Salário Mensal: ")
+horas_trabalhadas= input("Horas Trabalhadas:")
+valor_hora= int(salario_mensal) / int(horas_trabalhadas)
+print(valor_hora)
+print("Valor por cada hora trabalhada")

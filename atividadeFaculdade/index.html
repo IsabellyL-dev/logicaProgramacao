@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="laçofavicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body >
+    <header>
+        <h1>Exercícios Lógica de Programação </h1>
+    </header>
+    <main>
+        <div >
+               <h2>Questão 04</h2>
+               <p>Descubra quantos anos você terá em 2050</p>
+               <p>
+            <input type="number" name="idadeNasc" id="idadeNasc" placeholder="Insira seu ano de nascimento aqui">
+            <input type="button" value="Calcular" onclick="subtrair()"></p>
+            <div id="res"></div>
+        </div>
+        
+        <div>
+            <h2>Questão 06</h2>
+            <p>Como está o clima?</p>
+            <p id="clima"></p>
+            <p id="temperatura"></p>
+            <img id="fotos" src="imagens/quente.jpeg" alt="">
+        </div>
+        <div>
+           <h2>Questão 10</h2>
+           <p id="msgs2">Mensagem do dia!</p>
+           <p id="msgs"></p>
+        </div>
+        <div>
+            <h2>Questão 13</h2>
+            <p>Calcule aqui a média de suas notas</p>
+            <input type="number" name="nota1" id="nota1" placeholder="Digite aqui sua nota">
+            <input type="number" name="nota2" id="nota2" placeholder="Digite aqui sua nota">
+            <input type="number" name="nota3" id="nota3" placeholder="Digite aqui sua nota">
+            <input type="button" value="Calcular" onclick="media()">
+            <div id="media1" ></div>
+        </div>
+        <div>
+            <h2>Questão 17</h2>
+            <p>Aumento salarial de 20%</p>
+            <input type="number" name="salarioAtual" id="salarioAtual" placeholder="Digite aqui seu salário atual">
+            <input type="button" value="Calcular" onclick="aumento()">
+            <div id="novoS"></div>
+        </div>
+        <div>
+            <h2>Questão 19</h2>
+            <p>Saiba se você já possui idade para votar</p>
+            <input type="number" name="idadeVotar" id="idadeVotar" placeholder="Digite sua idade">
+            <input type="button" value="Enviar" onclick="idade()">
+            <div id="txt"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Criado por <strong>Isabelly L. Moura</strong></p>
+    </footer>
+    <script src="scriptExercicios.js"></script>
+</body>
+
+</html>
