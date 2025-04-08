@@ -1,0 +1,379 @@
+Aqui deixei as questões mais simples e as outras usei HTML e CSS para melhorar!
+
+//Questão 01
+let nome = "Luan"
+console.log(`Bem-vindo às minhas atividades de JavaScript, professor ${nome}!`)
+
+//Questão 02
+let evento = "Workshop de Javascript"
+let data = "15/08/2025"
+let local = "Sala 101"
+console.log(`Evento: ${evento}`)
+console.log(`Data: ${data}`)
+console.log(`Local: ${local}`)
+
+//Quetsão 03
+let nome1 = "Isabelly"
+let idade1 = 25
+let profissao = "Desenvolvedora Front-end"
+console.log(`Nome: ${nome1} | Idade: ${idade1} | Profissão: ${profissao}`)
+
+
+//Questão 05
+console.log("======================")
+console.log("SISTEMA DE CADASTRO")
+console.log("======================")
+ 
+
+//Questão 07
+let hora = 14
+let minuto = 35
+let segundo = 50
+console.log(`Hora atual: ${hora}:${minuto}:${segundo}`)
+
+//Questão 08
+console.log(`Inciando em ...`)
+for(let i = 5; i >= 1; i--){
+   console.log(i)   
+}
+console.log(`Vai!`)
+
+//Questão 09
+console.log(`Ranking:`)
+console.log(`1°- Maria`)
+console.log(`2°- Lucas`)
+console.log(`3°- Fernanda`)
+
+
+//Questão 11
+console.log(`Segunda-feira | Terça-feira | Quarta-feira | Quinta-feira | Sexta-feira`)
+
+
+//Questão 12
+let um = "Hambúrguer"
+let dois = "Pizza"
+let tres = "Suco"
+console.log(`1. ${um} - 15,00`)
+console.log(`2. ${dois} - 25,00`)
+console.log(`3. ${tres} - 5,00`)
+
+
+
+//Questão 14
+let mensagem = "O sucesso é a soma de pequenos esforços repetidos dia após dia."
+console.log(mensagem)
+
+//Questão 15
+let numeroAletorio =  Math.floor(Math.random()*100);
+console.log(`Número sorteado ${numeroAletorio}`)
+
+//Questão 16 
+let num = 5
+console.log(`${num} x 1 = 5`)
+console.log(`${num} x 2 = 10`)
+console.log(`${num} x 3 = 15`)
+console.log(`${num} x 4 = 20`)
+console.log(`${num} x 5 = 25`)
+console.log(`${num} x 6 = 30`)
+console.log(`${num} x 7 = 35`)
+console.log(`${num} x 8 = 40`)
+console.log(`${num} x 9 = 45`)
+console.log(`${num} x 10 = 50`)
+
+//Questão 18
+console.log("------------------------------")
+
+//Questão 20
+
+function vendas(estoque, venda){
+     return estoque - venda
+}
+let estoqueAtual = vendas(100,20)
+console.log(`Estoque inicial: 100 unidade`)
+console.log(`Venda realizada: 20 unidades`)
+
+Agora as que usei HTML e CSS
+Parte HTML -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="laçofavicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body >
+    <header>
+        <h1>Exercícios Lógica de Programação </h1>
+    </header>
+    <main>
+        <div >
+               <h2>Questão 04</h2>
+               <p>Descubra quantos anos você terá em 2050</p>
+               <p>
+            <input type="number" name="idadeNasc" id="idadeNasc" placeholder="Insira seu ano de nascimento aqui">
+            <input type="button" value="Calcular" onclick="subtrair()"></p>
+            <div id="res"></div>
+        </div>
+        
+        <div>
+            <h2>Questão 06</h2>
+            <p>Como está o clima?</p>
+            <p id="clima"></p>
+            <p id="temperatura"></p>
+            <img id="fotos" src="imagens/quente.jpeg" alt="">
+        </div>
+        <div>
+           <h2>Questão 10</h2>
+           <p id="msgs2">Mensagem do dia!</p>
+           <p id="msgs"></p>
+        </div>
+        <div>
+            <h2>Questão 13</h2>
+            <p>Calcule aqui a média de suas notas</p>
+            <input type="number" name="nota1" id="nota1" placeholder="Digite aqui sua nota">
+            <input type="number" name="nota2" id="nota2" placeholder="Digite aqui sua nota">
+            <input type="number" name="nota3" id="nota3" placeholder="Digite aqui sua nota">
+            <input type="button" value="Calcular" onclick="media()">
+            <div id="media1" ></div>
+        </div>
+        <div>
+            <h2>Questão 17</h2>
+            <p>Aumento salarial de 20%</p>
+            <input type="number" name="salarioAtual" id="salarioAtual" placeholder="Digite aqui seu salário atual">
+            <input type="button" value="Calcular" onclick="aumento()">
+            <div id="novoS"></div>
+        </div>
+        <div>
+            <h2>Questão 19</h2>
+            <p>Saiba se você já possui idade para votar</p>
+            <input type="number" name="idadeVotar" id="idadeVotar" placeholder="Digite sua idade">
+            <input type="button" value="Enviar" onclick="idade()">
+            <div id="txt"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Criado por <strong>Isabelly L. Moura</strong></p>
+    </footer>
+    <script src="scriptExercicios.js"></script>
+</body>
+
+</html>
+
+Parte javaScript -->
+//Questão 04
+
+function subtrair(){
+    let ano2050 = 2050
+    let idadeNasc1 = window.document.getElementById('idadeNasc')
+
+    let idadeNasc2 = Number(idadeNasc1.value)
+    let s = ano2050 - idadeNasc2
+    let s2 = window.document.getElementById('res')
+    s2.innerHTML = `Sua idade em 2050 será: ${s}`
+
+}
+
+//Questão 06
+
+let temperatura1 = 26
+var  img1 = window.document.getElementById('fotos')
+var clima = window.document.getElementById('clima')
+var temp1 = window.document.getElementById('temperatura')
+
+  if(temperatura1 >= 30){
+    clima.innerHTML = "Clima: Quente"
+    temp1.innerHTML = `Temperatura: ${temperatura1} °C`
+  
+}
+ else{
+    if(temperatura1 >= 18){
+     clima.innerHTML = "Clima: Agradável"
+     temp1.innerHTML = `Temperatura: ${temperatura1} °C`
+     img1.src = 'imagens/agradavel.jpg'}
+
+    else{
+    clima.innerHTML = "Clima: Frio"
+    temp1.innerHTML = `Temperatura: ${temperatura1} °C`
+    img1.src = 'imagens/frio.jpeg'}
+ }
+
+//Questão 10
+
+let msg1 = "A persistência leva ao sucesso!"
+let msg2 = "Nunca desista dos seus sonhos!"
+let msg3 = "Faça hoje o que vai te dar orgulho amanhã!"
+let random = Math.floor(Math.random()*3);
+var texto = window.document.getElementById('msgs')
+
+    if (random === 0) {
+        texto.innerHTML = `${msg1}`
+    } else {
+        if (random === 1){
+           texto.innerHTML = `${msg2}`
+        }
+        else {
+          texto.innerHTML = `${msg3}`
+      } 
+    }
+
+
+//Questão 13
+
+function media(){
+let N1 = window.document.getElementById ('nota1')
+let N2 = window.document.getElementById ('nota2')
+let N3 = window.document.getElementById ('nota3')
+
+let Nota1 = Number(N1.value)
+let Nota2 = Number(N2.value)
+let Nota3 = Number(N3.value)
+
+
+let soma = Nota1 + Nota2 + Nota3 
+let mediaFinal = (soma / 3).toFixed(2)
+
+let resultado = window.document.getElementById('media1')
+resultado.innerHTML = `Sua média é ${mediaFinal}`
+}
+
+//Questão 17
+function aumento(){
+
+    let SA1 = window.document.getElementById('salarioAtual')
+    let aumento1 = 20
+    let salarioatual1 = Number(SA1.value) 
+
+    let mult = aumento1 * salarioatual1
+    let divis = (mult / 100)
+    let resultadoFinal = salarioatual1 + divis 
+
+    let resultado1 = window.document.getElementById ('novoS')
+   
+      resultado1.innerHTML =  
+           `<p>Salário atual: R$ ${salarioatual1.toFixed(2)}</p>
+            <p>Aumento: 20%</p>
+            <p>Novo salário: R$ ${resultadoFinal.toFixed(2)}</p>`
+        
+}
+
+//Questão 19
+function idade(){
+    let idade = window.document.getElementById('idadeVotar')
+    let idade1 = Number(idade.value)
+    let resul = window.document.getElementById('txt')
+    if(idade1 >= 16){
+        
+        resul.innerHTML = `<p>Idade: ${idade1} anos </p>
+                           <p>Você pode votar!</p>`
+    }
+    else{
+        resul.innerHTML = `<p>Idade: ${idade1} anos </p>
+                           <p>Você não pode votar!</p>`
+    }
+}
+
+Parte CSS -->
+@charset 'UTF-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #EFD5F2;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color:#BBDDF2;
+    color: #8661b9;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.678);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+
+main div {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="number"], input[type="button"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="button"] {
+    background-color: #D2A2F2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #BBDDF2;
+    color: black;
+}
+p#msgs2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+p#msgs{
+    font-family: "Pattaya", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    background-color: #d2a2f2b0;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+footer{
+    margin-top: 20px;
+    background-color: #BBDDF2;
+    padding: 15px;
+    color: #252625;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.582);
+}
+console.log(`Estoque atualizado: ${estoqueAtual} unidades`)

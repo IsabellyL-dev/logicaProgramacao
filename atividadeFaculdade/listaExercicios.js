@@ -1,3 +1,5 @@
+/* !Deixei as questões mais simples aqui e as outras usei html e css para melhorar! */
+
 //Questão 01
 let nome = "Luan"
 console.log(`Bem-vindo às minhas atividades de JavaScript, professor ${nome}!`)
